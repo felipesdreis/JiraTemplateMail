@@ -1,5 +1,7 @@
 console.log("Extensao Jira Email Rodando");
 
+console.log(equipesConfig)
+
 const interval = setInterval(() => {
     const header = document.querySelector(".aui-nav")
     let key = document.querySelector('#key-val').innerHTML;
@@ -54,10 +56,11 @@ const interval = setInterval(() => {
         console.log(header);
         clearInterval(interval);
         time = time.trim();
-        var equipe = '';
-        if (time == "Estruturantes") { equipe = '[TIM-Estruturantes]' }
-        if (time == "EficienciaOp") { equipe = '[TIM-EfOp]' }
-        if (time == "Integrações Netcool") { equipe = '[TIM-NOILPU2020]' }
+        var equipeCfg = equipesConfig.filter(cfgEquipe => {
+            return cfgEquipe.equipe == time
+        })
+        var equipe = equipeCfg[0].initEmail
+        console.log(`inicio email ${equipe}`);
 
         var combomail = document.createElement("select");
         combomail.classList.add("combo");

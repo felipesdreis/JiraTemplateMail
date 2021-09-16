@@ -15,7 +15,8 @@
             "css": [
                 "style.css"
             ],
-            "js": [
+            "js": [                
+                "cfg.js",
                 "script.js"
             ]
         }
