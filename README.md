@@ -4,7 +4,7 @@ Extensão para o Chrome para gerar subject de emails de validação e Branch nam
 ## Instalação
 - Abra a pagina de extensões do chrome (_chrome://extensions/_)
 - Habilite o modo de desenvolvedor
-- Arraste a Pasta inteira do projeto para o Janela do Chrome
+- Arraste a Pasta inteira do projeto para a Janela do Chrome
 
 ## Uso
 Ao abrir uma aba no chrome com uma issue do jira, irá aparecer as opções na aba do Jira de criar assunto de email e criar branch name no seguinte modelo -> "feature-ID_JIRA_Summary"
