@@ -1,0 +1,22 @@
+.assunto{
+    color: white;
+    font-size: 1rem;
+    background-color: green;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+.combo{
+    color: black;
+    font-size: 1rem;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin: 0.5rem; 
+}
+
+.git{
+    color: white;
+    font-size: 1rem;
+    background-color: #FE6E25;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
