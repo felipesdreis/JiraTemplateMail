@@ -3,7 +3,7 @@ Extensão para o Chrome para gerar subject de emails de validação e Branch nam
 
 ## Instalação
 - Abra a pagina de extensões do chrome (_chrome://extensions/_)
-- Habilite o modo de desenvlvedor
+- Habilite o modo de desenvolvedor
 - Arraste a Pasta inteira do projeto para o Janela do Chrome
 
 ## Uso
