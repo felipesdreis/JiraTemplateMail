@@ -31,6 +31,7 @@ const interval = setInterval(() => {
         //limpa virgulas e caracteres especias \[]-_\
         thisSummary = thisSummary.replace(/,|\[|]|-|_|\//g, ' ')
         thisSummary = thisSummary.trim()
+        //remove acentos
         thisSummary = thisSummary.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
         thisSummary = thisSummary.trim()
         var splitSummary = thisSummary.split(' ')
