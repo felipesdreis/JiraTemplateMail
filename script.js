@@ -21,9 +21,9 @@ const interval = setInterval(() => {
      */
     function montaBranchName() {
         var excluir = [',', 'uma', 'um', '-', 'a', 'ante', 'após até', 'com', 'contra', 'de', 'desde', 'em',
-            'entre', 'para', 'per', 'perante', 'por', 'sem', 'sob', 'no', 'na', 'parte']
+            'entre', 'para', 'per', 'perante', 'por', 'sem', 'sob', 'no', 'na', 'parte', '.']
 
-        var thisSummary = summary
+        var thisSummary = summary.toLowerCase()
         var thisIssue = key
 
         //Limpa Parenteses
@@ -60,7 +60,7 @@ const interval = setInterval(() => {
         var equipeCfg = equipesConfig.filter(cfgEquipe => {
             return cfgEquipe.equipe == time
         })
-        var equipe = equipeCfg[0].initEmail
+        var equipe = (equipeCfg.length > 0) ? equipeCfg[0].initEmail : "<equipe>";
         console.log(`inicio email ${equipe}`);
 
         var combomail = document.createElement("select");
