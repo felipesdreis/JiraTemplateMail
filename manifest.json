@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Jira Template",
-    "version": "1.5.3",
+    "version": "1.6.0",
     "icons": {
         "128": "128.png"
     },
@@ -10,14 +10,17 @@
     "content_scripts": [
         {
             "matches": [
-                "https://jira.icarotech.com/*"
+                "https://jira.icarotech.com/*",
+                "https://icarotech.atlassian.net/*"
             ],
             "css": [
-                "style.css"
+                "style.css",
+                "bootstrap.min.css"
             ],
             "js": [                
                 "cfg.js",
-                "script.js"
+                "script.js",
+                "bootstrap.bundle.min.js"
             ]
         }
     ],
